@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tags for character set and viewport -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title of the web page -->
+    <title>Toy drone assessment</title>
+    <!-- Link to the CSS stylesheets -->
+    <link rel="stylesheet" href="app.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <!-- Popup container for user guide -->
+    <div id="popup-container">
+        <div id="popup-content">
+            <!-- Close icon for the popup -->
+            <div id="close-icon">
+                <span id="popup-close-btn">&times;</span>
+            </div>
+            <!-- User guide section -->
+            <div id="user-guide">
+                <h2>Welcome to the Spaceship simulation</h2>
+                <h3>User Guide</h3>
+                <p>You can control the drone using buttons and keyboard shortcuts.</p>
+            </div>
+            <!-- Button explanations -->
+            <h4>Buttons:</h4>
+            <!-- Detailed explanations for each button -->
+            <h4>Place (Enter): </h4>
+            <p>Click the "Place" button to place the drone on the grid. It will be placed at the top of the grid, facing north.</p>
+            <h4>Move (Arrow Up/W): </h4>
+            <p>Click the "Move" button to move the drone one cell in the direction it's facing.</p>
+            <h4>Left (ArrowLeft/A): </h4>
+            <p>Click the "Left" button to rotate the drone 90 degrees to the left.</p>
+            <h4>Right (Arrow Right/D):</h4> 
+            <p>Click the "Right" button to rotate the drone 90 degrees to the right.</p>
+            <h4>Report: </h4>
+            <p>Click the "Report" button to get a report of the drone's current position and direction.</p>
+            <h4>Attack (Spacebar):</h4> 
+            <p>Click the "Attack" button to simulate an attack action. The drone will attack in the direction it's facing, and an explosion may occur.</p>
+        </div>
+    </div>
+    
+    <!-- Game Boy container -->
+    <div class="gameboy">
+        <!-- Title of the game -->
+        <h1>Stormcraft Games</h1>
+        <!-- Feedback popup for notifications -->
+        <div id="feedback-popup"></div>
+        <div class="screen">
+            <section class="wrapper">
+                <!-- Button to open the popup -->
+                <div id="gear-icon">
+                    <button id="popup-button">
+                        <i class="fas fa-cog"></i>    
+                    </button>
+                </div>
+                <!-- Starry background for the game -->
+                <div id="stars"></div>
+                <div id='stars2'></div>
+                <div id='stars3'></div>
+                <!-- Game canvas -->
+                <canvas id="game-canvas"></canvas>
+            </section>
+        </div>
+        <div class="controls">
+            <!-- Button rows for game controls -->
+            <div class="button-row1">
+                <!-- Report button -->
+                <button id="report-button" class="video-game-button">Report</button>
+                <!-- Move button -->
+                <button id="move-button" class="start-btn">Move</button>
+                <!-- Place button -->
+                <button id="place-button" class="video-game-button">Place</button>
+            </div>
+            <div class="button-row">
+                <!-- Left button -->
+                <button id="left-button" class="start-btn">Left</button>
+                <!-- Attack button -->
+                <button id="attack-button" class="start-btn">Attack</button>
+                <!-- Right button -->
+                <button id="right-button" class="start-btn">Right</button>
+            </div>
+        </div>
+    </div>
+    <!-- JavaScript file for functionality -->
+    <script src="main.js"></script>
+</body>
+</html>
